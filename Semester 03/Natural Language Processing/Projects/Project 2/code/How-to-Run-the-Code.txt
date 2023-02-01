@@ -1,0 +1,19 @@
+How to use HAN, RNN, BIRNN, ATTBIRNN, FastTEXT, BERT
+
+1. There is three files in each modeel (contain directory)
+   * main for own dataset
+   * main1 for amazon dataset
+   * model file(name of model eg HAN)
+2. Simple run main and main1 (for both dataset) to run the code and import the model file from another file.
+
+Make sure all required libraries are installed:
+-tensorlow
+-keras
+-pytorch
+-scikit-learn
+-numpy
+-fastText
+-pandas
+-Bert(pretrained)
+
+

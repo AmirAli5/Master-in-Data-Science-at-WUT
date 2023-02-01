@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+	<img src="{{url_for('static', filename='bigdata.png')}}"  style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;"/>
+  <div style="display: block; margin-left: auto; margin-right: auto; width: 80%;">
+	<p style="color:black;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<h2 style="color:red;">Fake News</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:green;">True News</h2>
+	{% endif %}
+
+	</div>
+</div>
+
+</body>
+</html>

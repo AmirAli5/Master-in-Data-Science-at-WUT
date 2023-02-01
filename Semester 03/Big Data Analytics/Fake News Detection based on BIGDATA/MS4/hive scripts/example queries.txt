@@ -1,0 +1,13 @@
+use mythdb;
+
+SELECT COUNT(*) 
+FROM batch_view 
+WHERE (prediction=1) and (UNIX_TIMESTAMP(current_timestamp()) - UNIX_TIMESTAMP(datetimestamp) < 3600);
+
+
+SELECT 100*SUM(last_pred.prediction)/COUNT(*)
+FROM (
+SELECT prediction
+FROM batch_view
+WHERE (UNIX_TIMESTAMP(current_timestamp()) - UNIX_TIMESTAMP(datetimestamp) < 3600)
+) AS last_pred;

@@ -1,0 +1,9 @@
+Flask
+scikit_learn
+seaborn
+click
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+werkzeug

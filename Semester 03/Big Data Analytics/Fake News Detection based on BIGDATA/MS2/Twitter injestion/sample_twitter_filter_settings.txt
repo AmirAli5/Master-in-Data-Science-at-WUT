@@ -1,0 +1,31 @@
+### Cample curl requests for Twitter stream api and configuring its filters 
+
+### Twitter add/remove search rules
+
+curl -X POST --location "https://api.twitter.com/2/tweets/search/stream/rules?dry_run=false" \
+    -H "Authorization: Bearer {{bearer}}" \
+    -H "Content-Type: application/json" \
+    -d "{
+          \"add\": [
+            {
+              \"value\": \"#news lang:en\",
+              \"tag\": \"english news\"
+            }
+          ],
+          \"delete\": {
+            \"ids\": []
+          }
+        }"
+
+
+### Twitter get current serach rules
+
+curl -X GET --location "https://api.twitter.com/2/tweets/search/stream/rules" \
+    -H "Authorization: Bearer {{bearer}}"
+
+
+### Twitter request search stream
+
+curl -X GET --location "https://api.twitter.com/2/tweets/search/stream" \
+    -H "Authorization: Bearer {{bearer}}" \
+    -H "Accept: text/event-stream"

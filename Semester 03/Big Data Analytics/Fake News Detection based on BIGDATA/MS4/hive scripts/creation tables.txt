@@ -1,0 +1,20 @@
+# Creation table batch layer
+CREATE TABLE avro_test
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS AVRO TBLPROPERTIES ('avro.schema.url'='/users/eleves-b/2018/jean-bapt$
+
+CREATE EXTERNAL TABLE flwr2
+LIKE avro_test
+PARTITIONED BY(date string)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS PARQUET LOCATION 'file:///users/eleves-b/2018/jean-baptiste.soubaras/$
+
+DROP TABLE avro_test;
+
+
+# Creation table serving layer
+CREATE EXTERNAL TABLE batch_view (tweet string, datetimestamp string, prediction string)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS PARQUET LOCATION 'file:///users/eleves-b/2018/jean-baptiste.soubaras/BDA/hdfs/batch_view/' ;

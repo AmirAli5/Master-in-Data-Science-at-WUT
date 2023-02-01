@@ -1,0 +1,26 @@
+### HIVE COMMANDS
+#################
+
+### CREATION OF THE TABLE
+CREATE DATABASE mythdb location '/users/eleves-b/2018/jean-baptiste.soubaras/BDA/hive/warehouse';
+
+CREATE TABLE avro_test
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS AVRO TBLPROPERTIES ('avro.schema.url'='/users/eleves-b/2018/jean-baptiste.soubaras/BDA/schemas/flwrAvro.avsc');
+
+CREATE EXTERNAL TABLE flwr2
+LIKE avro_test
+PARTITIONED BY(date string)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS PARQUET LOCATION 'file:///users/eleves-b/2018/jean-baptiste.soubaras/BDA/hdfs/mock/flwr2/' ;
+
+DROP TABLE avro_test;
+
+### Update of the table
+# MSCK REPAIR TABLE flwr_parquet;
+cd /users/eleves-b/2018/jean-baptiste.soubaras/BDA/
+
+### TESTS
+SELECT * FROM mythdb.flwr_parquet LIMIT 10;
+SELECT COUNT(*) FROM mythdb.flwr_parquet;
