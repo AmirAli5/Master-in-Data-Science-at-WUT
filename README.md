@@ -28,3 +28,14 @@
 6. Cloud Computing
 
 ![green-divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
+
+## Semester 02 (Summer 2022)
+1. Social Networks and Recommendation System
+2. Natural language Processing
+3. Big Data Analytics
+4. Introduction to Bioinformatics
+5. Diploma Seminar I
+6. Management of Organisation and Intellectual Property in ICT Industry
+7. Legal Risks and Compliance in ICT Industry
+
+![green-divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
