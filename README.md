@@ -31,7 +31,7 @@
 
 ## Semester 03 (Winter 2022/23)
 1. Social Networks and Recommendation System
-2. Natural language Processing
+2. Natural Language Processing
 3. Big Data Analytics
 4. Introduction to Bioinformatics
 5. Diploma Seminar I
