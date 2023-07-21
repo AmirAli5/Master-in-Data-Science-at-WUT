@@ -39,3 +39,11 @@
 7. Legal Risks and Compliance in ICT Industry
 
 ![green-divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
+
+## Semester 04 (Summer 23)
+1. Data Science Workshop
+2. Diploma Seminar II
+3. Element of Modern Physics
+4. Master's Thesis
+
+![green-divider](https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png)
