@@ -1,5 +1,5 @@
 ![Master in Data Science](https://pbs.twimg.com/media/FIC-98vXMAAM2Zw?format=jpg&name=900x900)
-#### In this repo, all about my Master Data Science progress which currently, I am pursuing at Warsaw University of Technology. https://sites.google.com/view/amir-ali
+#### In this repository, I document my journey through the Master of Data Science program at Warsaw University of Technology, which I successfully completed from October 2021 to October 2023. This repository serves as a comprehensive record of my academic and personal growth during this period.. https://sites.google.com/view/amir-ali
 #### The Master's in Data Science Program run by the Faculty of Mathematics and Information Science is among the first European programs in Data Science and is fully focused on data engineering and data analytics.
 
 <font color = 'red'> Note: This repository is not allowd to Fork:) </font>
